@@ -19,7 +19,7 @@ $("#saves").on("click", function () {
   const q7_text = $("#q7_text").val();
   const key = [];
   const value = [];
-  const character = [["hishin_001", "/img/en.png"], ["hishin_002", "/img/bihei.png"], ["hishin_003", "/img/sosui.png"]]
+  const character = [["hishin_001", "img/en.png"], ["hishin_002", "img/bihei.png"], ["hishin_003", "img/sosui.png"]]
   var img = "";
   // keyを格納（日付、名前、管理番号）
   key.push(key_date, key_name, key_number)
