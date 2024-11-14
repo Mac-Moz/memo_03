@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>myMemoPad</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+
+
+
+  <h1>フリーランス新法チェックリスト</h1>
+
+    <div class="userchange">登録者画面</div>
+
+  <div class="input-area">
+    <p>契約日（更新日）</p>
+    <input id="key_date" type="date" placeholder="契約日を入力">
+    <p>業務委託者</p>
+    <textarea id="key_name" placeholder="業務委託者の氏名を入力"></textarea>
+    <p>社内管理番号</p>
+          <select id="key_number">
+            <option value="hishin_001">hishin_001</option>
+            <option value="hishin_002">hishin_002</option>
+            <option value="hishin_003">hishin_003</option>
+          </select>
+
+
+  </div>
+  <main>
+    <div class="input-area">
+      <h1 class=>書面などにより取引条件を明示していますか?</h1>
+      <div class="inner">
+        <div class="inner_contents">
+          <p>フリーランスに対して業務委託をした場合、直ちに書面または電磁的方法（メール、SNSのメッセージ等）で取引条件を明示する義務があります。
+            明示方法は、口頭での明示はNGで、書面または電磁的方法かを発注事業者が選ぶことができます。
+            取引条件として明示する事項は９つです。
+            <br>①給付の内容
+            <br>②報酬の額
+            <br>③支払期日
+            <br>④業務委託事業者・フリーランスの名称
+            <br>⑤業務委託をした日
+            <br>⑥給付を受領する日/役務の提供を受ける日
+            <br>⑦給付を受領する場所/役務の提供を受ける場所
+            <br>⑧（検査をする場合）検査完了日
+            <br>⑨（現金以外の方法で報酬を支払う場合）報酬の支払方法に関して必要な事項
+          </p>
+        </div>
+        <div class="inner">
+          <select id="q1_select">
+            <option value="はい">はい</option>
+            <option value="いいえ">いいえ</option>
+            <option value="その他">その他</option>
+          </select>
+          <textarea id="q1_text" placeholder="いいえ、その他の場合にはその理由を入力"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <h1 class=>報酬支払期日の設定・期日内の支払いをしていますか?</h1>
+      <div class="inner">
+        <div class="inner_contents">
+          <p>報酬の支払期日は発注した物品等を受け取った日から数えて60日以内のできる限り短い期間内で定め、一度決めた期日までに支払う必要があります。<br>
+            ただし、元委託者から受けた業務を発注事業者がフリーランスに再委託をした場合、条件を満たせば、元委託業務の支払期日から起算して30日以内のできる限り短い期間内で支払期日を定めることができる【再委託の例外】もあります
+          </p>
+        </div>
+        <div class="inner">
+          <select id="q2_select">
+            <option value="はい">はい</option>
+            <option value="いいえ">いいえ</option>
+            <option value="その他">その他</option>
+          </select>
+          <textarea id="q2_text" placeholder="いいえ、その他の場合にはその理由を入力"></textarea>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    </div>
+
+    <div class="input-area">
+      <h1 class=>1ヶ月以上の業務を委託した場合に、7つの禁止行為に抵触していませんか?</h1>
+      <div class="inner">
+        <div class="inner_contents">
+          <p>フリーランスに対して１か月以上の業務を委託した場合には、
+            ７つの行為が禁止されています。
+            <br>①受領拒否（注文した物品または情報成果物の受領を拒むこと）
+            <br>②報酬の減額（あらかじめ定めた報酬を減額すること）
+            <br>③返品（受け取った物品を返品すること）
+            <br>④買いたたき（類似品等の価格または市価に比べて、著しく低い報酬を不当に定めること）
+            <br>⑤購入・利用強制（指定する物・役務を強制的に購入・利用させること）
+            <br>⑥不当な経済上の利益の提供要請（金銭、労務の提供等をさせること）
+            <br>⑦不当な給付内容の変更・やり直し（費用を負担せずに注文内容を変更し、または受領後にやり直しをさせること）
+          </p>
+        </div>
+        <div class="inner">
+          <select id="q3_select">
+            <option value="はい">はい</option>
+            <option value="いいえ">いいえ</option>
+            <option value="その他">その他</option>
+          </select>
+          <textarea id="q3_text" placeholder="いいえ、その他の場合にはその理由を入力"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <h1 class=>募集情報について的確な表示をしていますか?</h1>
+      <div class="inner">
+        <div class="inner_contents">
+          <p>広告などによりフリーランスの募集情報を提供する際には、虚偽の表示または誤解を生じさせる表示をしてはならず、
+            <br>また、募集情報を正確かつ最新の内容に保たなければなりません。
+          </p>
+        </div>
+        <div class="inner">
+          <select id="q4_select">
+            <option value="はい">はい</option>
+            <option value="いいえ">いいえ</option>
+            <option value="その他">その他</option>
+          </select>
+          <textarea id="q4_text" placeholder="いいえ、その他の場合にはその理由を入力"></textarea>
+        </div>
+      </div>
+    </div>
+
+
+    </div>
+
+    <div class="input-area">
+      <h1 class=>育児介護等と業務の両立に対する配慮を行っていますか？</h1>
+      <div class="inner">
+        <div class="inner_contents">
+          <p>フリーランスに対して６か月以上の業務を委託している場合、フリーランスからの申出に応じて、フリーランスが育児や介護などと業務を両立できるよう、必要な配慮をしなければなりません。
+            また、６か月未満の業務を委託している場合も配慮するよう努めなければなりません。
+            <br>配慮の例としては、
+            <br>●「妊婦健診がある日について、打ち合わせの時間を調整したり、就業時間を短縮したりする」
+            <br>●「育児や介護などのため、オンラインで業務を行うことができるようにする」
+            <br>といった対応があげられます。
+          </p>
+        </div>
+        <div class="inner">
+          <select id="q5_select">
+            <option value="はい">はい</option>
+            <option value="いいえ">いいえ</option>
+            <option value="その他">その他</option>
+          </select>
+          <textarea id="q5_text" placeholder="いいえ、その他の場合にはその理由を入力"></textarea>
+        </div>
+      </div>
+    </div>
+    <div class="input-area">
+      <h1 class=>ハラスメント対策に関する
+        体制整備を行なっていますか？</h1>
+      <div class="inner">
+        <div class="inner_contents">
+          <p>ハラスメントによりフリーランスの就業環境が害されることがないよう、相談対応のための体制整備などの必要な措置を講じなければなりません。
+            <br>体制整備などの必要な措置の例としては、
+            <br>●「従業員に対してハラスメント防止のための研修を行う」
+            <br>●「ハラスメントに関する相談の担当者や相談対応制度を設けたり、外部の機関に相談への対応を委託する」
+            <br>●「ハラスメントが発生した場合には、迅速かつ正確に事実関係を把握する」
+            <br>などの対応があげられます。
+          </p>
+        </div>
+        <div class="inner">
+          <select id="q6_select">
+            <option value="はい">はい</option>
+            <option value="いいえ">いいえ</option>
+            <option value="その他">その他</option>
+          </select>
+          <textarea id="q6_text" placeholder="いいえ、その他の場合にはその理由を入力"></textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <h1 class=>中途解除等の
+        事前予告・理由開示を実施していますか？</h1>
+      <div class="inner">
+        <div class="inner_contents">
+          <p>フリーランスに対して６か月以上の業務を委託している場合で、
+            その業務委託に関する契約を解除する場合や更新しない場合、
+            少なくとも30日前までに、
+            <br>①書面②ファクシミリ③電子メール等による方法でその旨を予告しなければなりません。
+            <br>また、予告がされた日から契約が満了するまでの間に、フリーランスが解除の理由を請求した場合、同様の方法により遅滞なく開示しなければなりません。
+          </p>
+        </div>
+        <div class="inner">
+          <select id="q7_select">
+            <option value="はい">はい</option>
+            <option value="いいえ">いいえ</option>
+            <option value="その他">その他</option>
+          </select>
+          <textarea id="q7_text" placeholder="いいえ、その他の場合にはその理由を入力"></textarea>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="button-area">
+      <button id="saves">保存</button>
+    </div>
+
+    <div class="userchange">管理者画面</div>
+
+    <div class="button-area">
+      <button id="relode">リロード</button>
+      <button id="clear">全て削除</button>
+      <button id="selectclear">選択削除</button>
+    </div>
+  </main>
+
+
+  <div id="list">
+    <!-- ここに追加データが挿入される -->
+  </div>
+  <footer>
+    Gs
+  </footer>
+  <!-- 以下にjsを書いていきます -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./js/set.js"></script>
+
+
+</body>
+
+</html>
