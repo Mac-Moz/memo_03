@@ -95,7 +95,7 @@ function display() {
     const value = JSON.parse(localStorage.getItem(key_01));
     console.log("key",key)
     console.log("value", value)
-    const character = [["hishin_001", "/img/en.png"], ["hishin_002", "/img/bihei.png"], ["hishin_003", "/img/sosui.png"]]
+    const character = [["hishin_001", "img/en.png"], ["hishin_002", "img/bihei.png"], ["hishin_003", "img/sosui.png"]]
     var img = "";
     for (let i = 0; i < character.length; i++) {
       if (key[2] === character[i][0]) {
